@@ -22,7 +22,7 @@ function App() {
     Axios.put("http://localhost:3001/update", { newAge: newAge, id: id })
     
     setListFromDb(listFromDb.map((val) => {
-      return  val._id == id ? { _id :id, name: val.name, age: newAge } : val;
+      return  val._id === id ? { _id :id, name: val.name, age: newAge } : val;
     }));
   };
 
@@ -43,6 +43,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1> Friends_app</h1>
       <div className="inputs">
         <input onChange={(e) => { setName(e.target.value) }} type="text" placeholder="name..." />
         <input onChange={(e) => { setAge(e.target.value) }} type="number" placeholder="age" />
