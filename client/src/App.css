@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css2?family=Hind:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  font-family: 'Hind', sans-serif;
+  background-color: black;
+  color: aliceblue;
+  margin: 0%;
+  padding: 0%;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 400px;
+  background-color: bisque;
+}
+
+.inputs input {
+  width: 200px;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.inputs button {
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgb(230, 145, 41);
+  color: bisque;
+  
+}
+
+.inputs button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+.listofFriends{
+display: flex;
+flex-direction: column;
+justify-self: center;
+align-items: center;
+}
+
+.friendcontainer{
+  display: flex;
+  flex-direction:row;
+  margin: 10px;
+
+}
+
+.friend{
+  width: 400px;
+  height: 60px;
+  background:rgb(230, 145, 41) ;
+  display:flex;
+  
+  color: rgb(71, 27, 27);
+}
+.friend h3 {
+  margin-left: 10px;
+}
+
+.friendcontainer button{
+  width:60px;
+  height: 60px;
+  border: 2px solid rgb(216, 200, 200);
+  
+}
